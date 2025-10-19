@@ -1,120 +1,99 @@
-## To-Do List Web Application
+# To-Do List Web Application
 
-To-Do List is a Spring Boot web application that helps users manage their daily tasks efficiently. The application allows users to create, read, update, and delete tasks. Tasks are automatically ordered based on the days remaining to complete them, ensuring better task management and prioritization.
+To-Do List is a **Spring Boot web application** that helps users manage their daily tasks efficiently. The application allows users to **create, read, update, and delete tasks**. Tasks are automatically ordered based on the days remaining to complete them, ensuring better task management and prioritization.
 
-This project demonstrates the use of Spring Boot, Spring Data JPA, Hibernate, and Maven to build a robust, full-stack web application.
+This project demonstrates the use of **Spring Boot, Spring Data JPA, Hibernate, and Maven** to build a robust, full-stack web application.
 
-Features
+---
 
-Add New Task: Users can create a new task by filling in a form. The form validates input and cannot be submitted until all required fields are completed.
+## Features
 
-View Tasks: All tasks are displayed in a list, ordered by the days remaining to complete each task.
+- **Add New Task:** Users can create a new task via a form. Validation ensures all required fields are filled.  
+- **View Tasks:** Tasks are displayed in a list ordered by days remaining.  
+- **Search Tasks:** Find tasks by title or description.  
+- **Update Task:** Edit tasks using a pre-populated form.  
+- **Delete Task:** Remove tasks you no longer need.  
+- **Task Validation:** Ensures users provide necessary information before adding/updating tasks.
 
-Search Tasks: Users can search for tasks by title or description.
+---
 
-Update Task: Users can update a task using a pre-populated form.
+## Screenshots
 
-Delete Task: Users can delete tasks they no longer need.
+**Task List View**  
+![Task List](https://user-images.githubusercontent.com/93772280/150697357-62b910e3-6a84-4e3e-b4f0-2b2573dac60c.PNG)
 
-Task Validation: Ensures that users provide all necessary information before adding or updating tasks.
+**Update Task Form**  
+![Update Task](https://user-images.githubusercontent.com/93772280/150697401-b4ef4206-a645-4822-8d49-4fa59189b2f3.PNG)
 
-Screenshots
+**Add New Task Form**  
+![Add Task](https://user-images.githubusercontent.com/93772280/150697411-55a03523-4888-4197-b0f2-d50bd73e6419.PNG)
 
-Task List View
+---
 
-<img src="https://user-images.githubusercontent.com/93772280/150697357-62b910e3-6a84-4e3e-b4f0-2b2573dac60c.PNG" width="700">
+## Built With
 
-Update Task Form
+- **Java 17**  
+- **Spring Boot 2.x** – Java web framework  
+- **Spring Data JPA** – Simplifies database access and ORM  
+- **Hibernate** – ORM framework for mapping Java objects to database tables  
+- **Maven** – Dependency management and build tool  
+- **H2 / MySQL (Optional)** – Database for storing tasks  
+- **Thymeleaf** – Template engine for rendering dynamic HTML pages
 
-<img src="https://user-images.githubusercontent.com/93772280/150697401-b4ef4206-a645-4822-8d49-4fa59189b2f3.PNG" width="700">
+---
 
-Add New Task Form
+## Project Structure
 
-<img src="https://user-images.githubusercontent.com/93772280/150697411-55a03523-4888-4197-b0f2-d50bd73e6419.PNG" width="700">
-Built With
+<img width="757" height="710" alt="Screenshot 2025-10-19 082729" src="https://github.com/user-attachments/assets/91918116-4ecc-4a56-ab53-8f5c0f433ece" />
 
-Java 17
+-------------------
 
-Spring Boot 2.x – Framework for building Java web applications
+---
 
-Spring Data JPA – Simplifies database access and ORM
+## Getting Started
 
-Hibernate – ORM framework for mapping Java objects to database tables
+### Prerequisites
 
-Maven – Dependency management and build tool
+- Java JDK 17+  
+- Maven 3.x  
+- IDE (IntelliJ IDEA, Eclipse, etc.)  
+- Optional: MySQL or H2 database
 
-H2/MySQL (Optional) – Database for storing tasks
+### Installation
 
-Thymeleaf – Template engine for rendering dynamic HTML pages
+1. Clone the repository:
 
-Project Structure
-To-Do-List
-│
-├── src/main/java
-│   ├── com.example.todo
-│   │   ├── controller   # Controllers for handling web requests
-│   │   ├── model        # Task entity class
-│   │   ├── repository   # Spring Data JPA repositories
-│   │   └── service      # Service layer for business logic
-│
-├── src/main/resources
-│   ├── templates         # Thymeleaf HTML templates
-│   └── application.properties
-│
-└── pom.xml               # Maven dependencies
+```bash
+git clone https://github.com/atharva18-hue/To-Do-List-Web-Application.git
+cd To-Do-List-Web-Application
 
-Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine.
-
-Prerequisites
-
-Java JDK 17 or above
-
-Maven 3.x
-
-IDE such as IntelliJ IDEA or Eclipse
-
-Optional: MySQL database or H2 in-memory database
-
-Installation
-
-Clone the repository
-
-git clone <your-repo-link>
-cd To-Do-List
-
-
-Build the project
+Build the project:
 
 mvn clean install
 
 
-Run the application
+Run the application:
 
 mvn spring-boot:run
 
 
-Access the application
-Open your browser and navigate to:
+Open in browser:
 
 http://localhost:8080/tasks
 
 Usage
 
-Add Task: Click “Add New Task” → Fill in the form → Submit
+Add Task: Click "Add New Task" → Fill form → Submit
 
-Update Task: Click “Edit” on a task → Modify details → Update
+Update Task: Click "Edit" → Modify → Update
 
-Delete Task: Click “Delete” on a task to remove it
+Delete Task: Click "Delete" → Remove task
 
-Search Task: Enter a keyword in the search box → View matching results
+Search Task: Enter keyword → See matching results
 
 Database Configuration
 
-The application supports both H2 in-memory and MySQL databases. Configure your database in application.properties.
-
-H2 Example:
+H2 Example (in-memory database):
 
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
@@ -134,20 +113,20 @@ spring.jpa.show-sql=true
 
 Future Improvements
 
-Add user authentication and authorization
+Add user authentication & authorization
 
-Add priority levels for tasks
+Implement task priorities
 
-Implement REST APIs for task management
+Add REST APIs
 
-Add notifications/reminders for upcoming tasks
+Notifications/reminders for tasks
 
-Implement responsive UI with Bootstrap or Tailwind CSS
+Responsive UI with Bootstrap or Tailwind CSS
 
 Author
 
 Atharva Chavhan
 
-GitHub: https://github.com/yourusername
+GitHub: atharva18-hue
 
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn: Your LinkedIn
