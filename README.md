@@ -48,8 +48,6 @@ This project demonstrates the use of **Spring Boot, Spring Data JPA, Hibernate, 
 
 -------------------
 
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -59,29 +57,30 @@ This project demonstrates the use of **Spring Boot, Spring Data JPA, Hibernate, 
 - IDE (IntelliJ IDEA, Eclipse, etc.)  
 - Optional: MySQL or H2 database
 
+- ---------------------------------
+
 ### Installation
 
 1. Clone the repository:
-
-```bash
 git clone https://github.com/atharva18-hue/To-Do-List-Web-Application.git
 cd To-Do-List-Web-Application
 
-Build the project:
+----------------
 
+## Build the project:
 mvn clean install
 
+--------------------------------
 
-Run the application:
-
+## Run the application:
 mvn spring-boot:run
 
-
-Open in browser:
-
+-----------------------------------
+## Open in browser:
 http://localhost:8080/tasks
 
-Usage
+----------------------
+## Usage
 
 Add Task: Click "Add New Task" → Fill form → Submit
 
@@ -91,9 +90,11 @@ Delete Task: Click "Delete" → Remove task
 
 Search Task: Enter keyword → See matching results
 
-Database Configuration
+----------------------------
 
-H2 Example (in-memory database):
+## Database Configuration
+
+**H2 Example (in-memory database):**
 
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
@@ -102,8 +103,9 @@ spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.h2.console.enabled=true
 
+-------------------------------------
 
-MySQL Example:
+## MySQL Example:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/todolist
 spring.datasource.username=root
@@ -111,7 +113,9 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-Future Improvements
+-------------------
+
+## Future Improvements
 
 Add user authentication & authorization
 
@@ -123,7 +127,9 @@ Notifications/reminders for tasks
 
 Responsive UI with Bootstrap or Tailwind CSS
 
-Author
+---------------------------
+
+## Author
 
 Atharva Chavhan
 
