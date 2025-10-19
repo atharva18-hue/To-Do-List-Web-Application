@@ -97,22 +97,27 @@ Search Task: Enter keyword → See matching results
 **H2 Example (in-memory database):**
 
 spring.datasource.url=jdbc:h2:mem:testdb
+
 spring.datasource.driverClassName=org.h2.Driver
+
 spring.datasource.username=sa
+
 spring.datasource.password=
+
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
 spring.h2.console.enabled=true
 
 -------------------------------------
 
 ## MySQL Example:
-
+```````
 spring.datasource.url=jdbc:mysql://localhost:3306/todolist
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-
+`````
 -------------------
 
 ## Future Improvements
