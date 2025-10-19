@@ -1,4 +1,4 @@
-# To-Do List Web Application (Spring Boot + Spring Data JPA + Hibernate + Maven)
+# To-Do List Web Application 
 
 To-Do List is a **Spring Boot web application** that helps users manage their daily tasks efficiently. The application allows users to **create, read, update, and delete tasks**. Tasks are automatically ordered based on the days remaining to complete them, ensuring better task management and prioritization.
 
